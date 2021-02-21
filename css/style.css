@@ -9,7 +9,14 @@ body{
     font-family: 'Rubik', sans-serif;
 }
 
+.Contenedor{
+    clear: both;
+    content: "";
+    display: table;
+    width: 100%;
+}
 
+/* Seccion de menu */
 .MenuLateral{
     height: 100%;
     width: 0;
@@ -17,7 +24,7 @@ body{
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: navy;
     overflow-x: hidden;
     padding-top: 60px;
     padding-left: 0px;
@@ -60,19 +67,22 @@ body{
 .AbrirMenu{
     font-size: 20px;
     cursor: pointer;
-    background-color: #111;
+    background-color: navy;
     color: #fff;
     padding:  10px 15px;
     border: none;
 }
 
 .AbrirMenu:hover{
-    background-color: #444;
+    background-color: rgb(9, 0, 138);
 }
 
 #Menu{
     transition: margin-left 0.5ms;
-    padding: 20px;
+    /* padding: 20px; */
+    width: 120px;
+    float: left;
+
 }
 
 @media screen and (max-height: 450px) {
@@ -84,3 +94,32 @@ body{
         font-size: 18px;
     }
 }
+
+/* Seccion de menu */
+
+/* Seccion de Contenido Principal */
+
+#main {
+    box-sizing: border-box;
+    /* box-shadow: 0px 0px 20px #e3e1e1; */
+    background-color: #f1f1f1;
+    border-radius: 10px 0px 0px 0px;
+    border-bottom: 1px solid navy;
+    border-right: solid 10px navy;
+    margin: 20px;
+    padding: 20px;
+    width: 80%;
+    float: right;
+}
+
+@media screen and (max-width: 400px){
+    #main {
+        
+        margin-left: 10px;
+        float: left;
+        margin-top: 50px;
+        width: 95%;
+    }
+}
+
+/* Seccion de Contenido Principal */
