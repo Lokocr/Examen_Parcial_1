@@ -54,9 +54,24 @@
             
                 <hr class="DivisorMenu">
                 
-                <form action="EnviarFormulario()" method="post">
+                <form method="post">
 
+                    <div class="mb-3">
+                        <label for="txt_Asunto" class="form-label">Asunto:</label>
+                        <input type="email" class="form-control" id="txt_Asunto">
+                    </div>
+                    <div class="mb-3">
+                        <label for="txt_CorreoElectronico" class="form-label">Correo Electronico:</label>
+                        <input type="email" class="form-control" id="txt_CorreoElectronico" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="txt_Descripcion" class="form-label">Descripcion:</label>
+                        <textarea class="form-control" id="txt_Descripcion" rows="3"></textarea>
+                    </div>
 
+                    <div class="mb-3">
+                        <button type="submit" onclick="EnviarFormulario()"  class="btn btn-primary mb-3">Enviar Correo</button>
+                    </div>
                 </form>
             
             </section>

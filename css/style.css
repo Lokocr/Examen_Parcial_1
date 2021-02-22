@@ -39,7 +39,7 @@ body{
     width: 80%;
     border: none;
     border-top: 1px solid;
-    color: #818181;
+    color: white;
     z-index: 99;
 }
 
@@ -144,7 +144,7 @@ body{
 
 
 /* Seccion de Media Queries */
-@media screen and (max-width: 400px){
+@media screen and (max-width: 450px){
     #main {
         /* margin-left: 10px; */
         float: left;
